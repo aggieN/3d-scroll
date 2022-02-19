@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500&family=Montserrat&family=Source+Sans+Pro&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #181718;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.scroll-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  align-items: flex-start;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+section:nth-child(even) {
+  align-items: flex-end;
+}
+
+section div {
+  height: fit-content;
+}
+
+h1 {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #d5d4d4;
+  mix-blend-mode: exclusion;
+  animation: glow 4s linear infinite;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+@media screen and (min-width: 481px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@keyframes glow {
+  60% {
+    letter-spacing: 4.5px;
+    text-shadow: 0 0 7px #fff;
+  }
+}
+
