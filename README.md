@@ -1,6 +1,6 @@
 # React Three Fiber Example
 
-[DEMO](https://friendly-gates-28bcc6.netlify.app/)
+[DEMO](https://goofy-bohr-b7b6df.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
